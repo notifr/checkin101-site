@@ -1,0 +1,149 @@
+<section class='block block-dark' id='block-pricing'>
+  <header class='block-header'>
+    <div class='sizewrap'>
+      <h1 class='headline size1of1'>Pricing</h1>
+    </div>
+  </header>
+  <div class='line sizewrap bottom4'>
+    <div>
+      <h1 class='subtitle'>Notifr has a simple pricing structure</h1>
+      <p class='body'>
+        We don't limit you by the number of people in your organisation, classes or communities. Instead we charge on a per-check-in basis (each time you check-in with one of your segments). Since we build discounts into our payment structure, your per-check-in pricing automatically decreases the more you check-in. Run a check-in for as many people as you want through segments.
+      </p>
+      <h2 class='subtitle'>Example volumes:</h2>
+      <ul class='plain-list' id='pricing-tier-links'>
+        <li>
+          <a href='/pricing?val=60'>60 check-ins/year</a> Allow 5 of your staff to check-in monthly with their teams or programmes.
+        </li>
+        <li>
+          <a href='/pricing?val=500'>500 check-ins/year</a> Your organisation can run weekly check-ins for 5 different segments. 
+        </li>
+        <li>
+          <a href='/pricing?val=1200'>1,200 check-ins/year</a> Gives 20 of your staff
+        </li>
+        <li>
+          <a href='/pricing?val=3800'>3,800 check-ins/year</a> Run bi-weekly check-ins with 200 segments or classes!
+        </li>
+
+      </ul>
+    </div>
+    <div class='size4of6 small-top-2' id='block-calculator'>
+      <h1 class='subtitle'>Calculate your organisation costs</h1>
+      <div class='line' id='calculator-input'>
+        <div class='size1of2 padding-left-0'>
+          <p class='body marginhalf margin-left-0'>
+            Enter your estimated
+            <br> check-ins
+          </p>
+        </div>
+        <div class='size1of2 padding-right-0 padding-left-0'>
+          <input style="width:90%;" class='marginhalf margin-left-0 margin-right-0' min='0' pattern='[0-9]*' type='text'>
+        </div>
+      </div>
+      <div class='line hidden' id='calculator-rows'>
+        <ul class='plain-list'></ul>
+        <script id='calculator-row-template' type='template'>
+          <li>
+            <div class='size1of3 padding-left-0'>
+              <p class='body'>{{send_number}}</p>
+            </div>
+            <div class='size2of3 padding-right-0'>
+              <p class='body'>
+                {{tier_name}}
+                <span class='float-right'>{{cost}}</span>
+              </p>
+            </div>
+          </li>
+        </script>
+        <script id='calculator-ip-template' type='template'>
+          <li class='calculator-ip'>
+            <div class='size1of3'>
+              <p class='body'>
+                <input id="calculator-ip-checkbox" type="checkbox" value="{{truthy}}" {{checked}} />
+              </p>
+            </div>
+            <div class='size2of3'>
+              <p class='body'>
+                Add organisation training starting from $999.00
+              </p>
+            </div>
+          </li>
+        </script>
+        <script id='calculator-total-template' type='template'>
+          <li class='calculator-total'>
+            <p class='body'>
+              Estimated Cost Per Year
+              <span class='float-right'>{{total}}</span>
+            </p>
+          </li>
+          <li class='calculator-total'>
+            <p class='body'>
+              Average Monthly Cost
+              <span class='float-right'>{{monthly}}</span>
+            </p>
+          </li>
+          
+        </script>
+        <script id='calculator-really-template' type='template'>
+          <li class='calculator-really'>
+            <div class='size1of3'>
+              &nbsp;
+            </div>
+            <div class='size2of3'>
+              Really?! That&rsquo;s <a href="http://hyperboleandahalf.blogspot.com/2010/04/alot-is-better-than-you-at-everything.html" style="color: inherit;" target="_blank">alot</a> of check-ins. Contact a dedicated rep for tier 5 pricing.
+            </div>
+          </li>
+        </script>
+      </div>
+      <div class='line' id='pricing-table'>
+        <ul class='plain-list'>
+          <li class='pricing-row-free'>
+            <div class='size1of2 padding-left-0'>
+              <p class='body'>
+                <em>$100</em>
+              </p>
+            </div>
+            <div class='size1of2 padding-right-0 align-right'>
+              <p class='body'>
+                up to
+                <b>10</b> segment check-ins
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class='size1of2 padding-left-0'>
+              <p class='body'><em>$4.00</em>/check-in</p>
+            </div>
+            <div class='size1of2 padding-right-0 align-right'>
+              <p class='body'>next <b>100</b> check-ins</p>
+            </div>
+          </li>
+          <li>
+            <div class='size1of2 padding-left-0'>
+              <p class='body'><em>$2.00</em>/check-in</p>
+            </div>
+            <div class='size1of2 padding-right-0 align-right'>
+              <p class='body'>next <b>1k</b> check-ins</p>
+            </div>
+          </li>
+          <li>
+            <div class='size1of2 padding-left-0'>
+              <p class='body'><em>$0.50</em>/check-in</p>
+            </div>
+            <div class='size1of2 padding-right-0 align-right'>
+              <p class='body'>remaining check-ins</p>
+            </div>
+          </li>
+          <li class='pricing-row-ip'>
+            <div class='size1of1 padding-left-0'>
+              <p class='body'>
+                Add organisation training starting from $999.00.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
