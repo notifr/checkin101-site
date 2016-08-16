@@ -5,7 +5,7 @@
     <meta name="description" content="Create a high performing organisation and keep track of what's working throughout the year. Checkin101 is used by education, health & training organisations" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="./combo.css">
     <script>
         var urlSplit = document.URL.split("#");
         if (urlSplit[1]) {
@@ -44,7 +44,8 @@
     <meta property="og:image" content="http://notifr.com/fb-image.jpg">
     <meta property="og:site_name" content="Checkin101"/>
     <meta property="og:description" content="Create a high performing organisation and keep track of what's working throughout the year. Checkin101 is used by education, health & training organisations"/>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+<!--    <meta name="viewport" content="width=device-width" />-->
+    <meta name="viewport" content="initial-scale=1.0" />
     
 </head>
 <body>
@@ -132,19 +133,19 @@
             <h2>What Checkin101 does for organisations:</h2>
         </div>
         <div class="pure-u-1-1">
-            <div class="pure-u-sm-1-5 pure-u-1">
+            <div class="pure-u-sm-1-5 pure-u-1 o-item">
                 <h3>Reminds People</h3><br>
                 <img width="60%" src="assets/checkin101-remind.svg">
             </div>
-            <div class="pure-u-sm-1-5 pure-u-1">
+            <div class="pure-u-sm-1-5 pure-u-1 o-item">
                 <h3>Saves Time</h3><br>
                 <img width="60%" src="assets/checkin101-timeline.svg">
             </div>
-            <div class="pure-u-sm-1-5 pure-u-1">
+            <div class="pure-u-sm-1-5 pure-u-1 o-item">
                 <h3>Gauges Success</h3><br>
                 <img width="60%" src="assets/checkin101-gauge.svg">
             </div>
-            <div class="pure-u-sm-1-5 pure-u-1">
+            <div class="pure-u-sm-1-5 pure-u-1 o-item">
                 <h3>Prompts Action</h3><br>
                 <img width="60%" src="assets/checkin101-action.svg">
             </div>
@@ -167,13 +168,20 @@
             <img width="80%" src="assets/checkin101-product.svg">
             
         </div>
-        <div id="method-quote" class="pure-u-1-1 pure-u-md-2-5 section dark">
-            <img class="pure-img middle" style="border-radius:100px;margin-bottom:20px;" width="80px"  src="https://blogs.adobe.com/conversations/files/2015/09/DonnaMorris_210x210.jpg">
-            <h3>Donna Morris, SVP Human Resources</h3><br>
-            <div style="padding:0 40px;">"Our managers are now having on-going, genuine conversations with their team members; employees are engaged in feedback; and our voluntary attrition continues to trend downward"</div></div>
+        <div id="method-quote" class="pure-u-1-1 pure-u-md-2-5 section padding dark inset">
+            <h1>Live Demo - Team Check-in</h1>
+            <div class="iphone-container">
+              <span class="camera"></span>
+              <span class="mic"></span>
+              <div class="iframe-container">
+                <iframe height="150%" width="150%" src="https://my.checkin101.com/t101"></iframe>
+              </div>
+              <div class="home-button"></div>
+            </div>
+        </div>
     </div>
     
-    <div class="pure-g section center padding" style="padding-top:50px">
+    <div class="pure-g section center padding">
 <!--        <h1 class="pure-u-1-1">Checkin101 is the tool for implimenting the framework</h1>-->
         <div class="pure-u-1-1">
             <div class="pure-u-1-1 pure-u-sm-1-3">
@@ -323,29 +331,9 @@ scheduled and context is created for conversations. <br><b>Organisations</b> - C
             </div>
         </div>
     </div>
-<!--
-    <div id="adobe" class="pure-g section center padding">
-        <div class="pure-u-1-1">
-            <img class="pure-img middle" width="60px" src="http://www.nateyolles.com/etc/clientlibs/nateyolles/img/adobe.png">
-        </div>
-        <h2 class="pure-u-1-1">What check-ins have done for Adobe</h2>
-        
-        <div class="pure-u-1-1 middle">
-            <h3 class="pure-u-md-1-4 pure-u-1-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.6 50"><path d="M25,2.7l1.4,1.2,0.9,0.8,1.1-.4,1.7-.6L31,5.1l0.6,1h3L35,7.7l0.3,1.2,1.1,0.3,1.7,0.5-0.2,1.8v1.2l1,0.7,1.5,1.1-0.8,1.6-0.5,1.1,0.7,1,1,1.5L39.4,21l-0.8.9L38.9,23l0.5,1.7-1.6.8-1.1.5v3l-1.8.2-1.2.2-0.4,1.1-0.7,1.7-1.8-.4-1.2-.2-0.8.9-1.2,1.4L26,33l-1-.6L24,33l-1.6.9-1.2-1.4-0.8-.9-1.2.2-1.8.4-0.7-1.7-0.4-1.1-1.2-.2L13.4,29V26l-1.1-.5-1.6-.8L11.1,23l0.3-1.1L10.6,21,9.3,19.7l1-1.5,0.7-1-0.5-1.1L9.8,14.5l1.5-1.1,1-.7V11.6L11.8,9.8l1.7-.5,1.1-.3L15,7.7,15.3,6h3l0.6-1,0.9-1.5,1.7,0.6,1.1,0.4,0.9-.8L25,2.7M25,0L22.3,2.2,19,1,17.2,4H13.7L13,7.3l-3.4,1L10,11.8,7.2,13.9,8.7,17l-2,2.9,2.5,2.5-1,3.4,3.1,1.6,0.2,3.5L15,31.3l1.3,3.3,3.4-.7L22,36.5l3-1.8,3,1.8,2.3-2.7,3.4,0.7L35,31.3l3.5-.5,0.2-3.5,3.1-1.6-1-3.4,2.5-2.5-2-2.9,1.5-3.2L40,11.8l0.4-3.5L37,7.3,36.3,3.9H32.8L31,1,27.7,2.2,25,0h0Zm8.3,36.5-2.3-.5-1.5,1.8-1.1,1.3L27,38.3l-2-1.2-2,1.2-1.5.9-1.1-1.3-1.5-1.8-2.3.5-1.2.2V50h0.2L25,41.6,34.4,50h0.2V36.8ZM15.7,19.2a1,1,0,0,1-1-1,9.8,9.8,0,0,1,7.7-9.6,1,1,0,0,1,.4,2,7.9,7.9,0,0,0-6.1,7.6A1,1,0,0,1,15.7,19.2Z" transform="translate(-6.7)" style="fill:#ed1c24"/></svg><br><br>More engaged, higher performing staff</h3>
-            <div class="pure-u-md-1-12 pure-u-0"></div>
-            <h3 class="pure-u-md-1-4 pure-u-1-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0Zm0,48A23,23,0,1,1,48,25,23,23,0,0,1,25,48ZM38,36a1.5,1.5,0,1,1-2.1,2.1L25.3,27.5H25a2.4,2.4,0,0,1-1.5-4.4V11.4a1.5,1.5,0,0,1,3,0V23.1a2.4,2.4,0,0,1,.9,1.9,2.6,2.6,0,0,1,0,.3Z" style="fill:#ed1c24"/></svg><br><br>Saving 80,000 hours of manager's time in annual reviews</h3>
-            <div class="pure-u-md-1-12 pure-u-0"></div>
-            <h3 class="pure-u-md-1-4 pure-u-1-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 42.2"><path d="M34.5,26.3l0.4,0.2h0.3a7.8,7.8,0,0,0,2.4.4h3.3l0.5-.2h0.1l0.4-.3h0.2a7.9,7.9,0,0,0,3.4-6.3V19.1a7.8,7.8,0,0,0-.5-2.7,7.9,7.9,0,0,0-15.3,2.2h0c0,0.1,0,.2,0,0.4h0A7.9,7.9,0,0,0,34.5,26.3Zm-2.8-7.5h0a5.9,5.9,0,0,1,5.9-5.5,5.9,5.9,0,0,1,5.5,3.9,5.8,5.8,0,0,1,.4,1.9v0.2a5.8,5.8,0,0,1-.5,2.3,5.9,5.9,0,0,1-2,2.5H40.8l-0.3.2H40.4l-0.4.2H38.2a5.9,5.9,0,0,1-2.4-.2H35.3a5.9,5.9,0,0,1-3.6-5.4C31.7,19,31.7,18.9,31.7,18.8ZM37.6,27a12.3,12.3,0,0,0-8.9,3.8A17.5,17.5,0,0,0,0,44.4c0,0.2,0,.3,0,0.5v1.2H35V44.9c0-.2,0-0.3,0-0.5a17.6,17.6,0,0,0-.4-3.5H49.9V39.8c0-.1,0-0.2,0-0.4A12.4,12.4,0,0,0,37.6,27ZM2,44.1A15.5,15.5,0,0,1,28.1,33l0.6,0.6L29,33.9a15.5,15.5,0,0,1,1.7,2.1l0.2,0.4,0.4,0.7,0.2,0.4L32,38.9v0.3L32.4,40a15.4,15.4,0,0,1,.6,4.1H2Zm32.2-5.2h0l-0.7-1.7V36.9l-0.7-1.4-0.2-.3-0.9-1.3-0.2-.2-1.2-1.4A10.4,10.4,0,0,1,48,38.9H34.2ZM13.3,25h1a11.1,11.1,0,0,0,3.3.5h3.8l0.5-.2h0.3l0.7-.3h0.2l0.8-.5h0.1A11,11,0,1,0,6.6,14.2h0c0,0.2,0,.4,0,0.6A11,11,0,0,0,13.3,25ZM8.6,14.5h0a9,9,0,1,1,14.1,8H22.5l-0.6.3H21.9l-0.6.3H20.7l-0.5.2H17.6a9.1,9.1,0,0,1-2.7-.4H14.1a9,9,0,0,1-5.5-8.3C8.6,14.8,8.6,14.6,8.6,14.5Z" transform="translate(0 -3.9)" style="fill:#ed1c24"/></svg><br><br>Continuing to lower voluntary attrition rate</h3>
-        </div>
-        <p class="pure-u-sm-1-2 pure-u-1-1 middle" style="padding-top: 6em;"><i>"Managers are now having on-going, genuine conversations with their team members; employees are engaged in feedback; and our voluntary attrition continues to trend downward"</i></p>
-        
-        <p class="pure-u-1-1"><img class="pure-img middle" style="border-radius:100%;margin-bottom:20px;" width="50px" height="50px" src="https://blogs.adobe.com/conversations/files/2015/04/donna-morris-blog-300x250.jpg">Donna Morris, SVP Human Resources</p>
-    </div>
--->
     
-    
-    <div class="pure-g section center padding dark">
-        <h1 class="pure-u-1-1">Start checking-in with your high performing team</h1>
+    <div class="pure-g section center padding">
+        <h1 class="pure-u-1-1" style="padding:0">Drop us a line and we'll be in touch</h1>
         <div class="pure-u-1-1" id="signup">
             <form id="signup_form">
                 <fieldset>
@@ -356,9 +344,9 @@ scheduled and context is created for conversations. <br><b>Organisations</b> - C
                     <input id="f:ZW1haWw:MA:" name="f:ZW1haWw:MA:" type="email" required="" placeholder="Email Address" autocapitalize="off">
                     <input id="f:Y29tcGFueV9uYW1l:MA:" name="f:Y29tcGFueV9uYW1l:MA:" type="text" required="" placeholder="Your organisation" autocapitalize="on">
                     <p class="button">
-                        <a href="./organisations" style="margin:10px">Organisations</a>
-                        <button id="code" class="sign-up-btn ladda-button" data-style="contract" style="margin-top:20px;">
-                            try for free with your team
+<!--                        <a href="./organisations" style="margin:10px">Organisations</a>-->
+                        <button class="sign-up-btn ladda-button" data-style="contract" style="margin-top:20px;">
+                            Contact Sales
                         </button>
                     </p>
                 </fieldset>
@@ -372,6 +360,25 @@ scheduled and context is created for conversations. <br><b>Organisations</b> - C
             </p>
         </div>
 -->
+    </div>
+    <div id="footer" class="pure-g section center padding dark">
+        <div class="pure-u-1-1">
+            <ul>
+                <li><a href="./">Overview</a></li>
+                <li><a href="./programmes">Product</a></li>
+                <li><a href="https://manage.checkin101.com">Management Panel</a></li>
+                <li><a href="https://my.checkin101.com">My Check-ins</a></li>
+    <!--                        <li>Pricing</li>-->
+    <!--                        <li>Log In</li>-->
+    <!--                        <li><a href="https://code.notifr.com">Check-in</a></li>-->
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="pure-u-1-1">
+            <p class="footer-base-addr">Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18.46"><path d="M18.37,2.54A5.68,5.68,0,0,1,20,6.65a5.68,5.68,0,0,1-1.63,4.11L10,19.46l-8.37-8.7A5.68,5.68,0,0,1,0,6.65,5.68,5.68,0,0,1,1.63,2.54,4.66,4.66,0,0,1,5.17,1,4.66,4.66,0,0,1,8.7,2.54L10,3.88l1.35-1.35a4.77,4.77,0,0,1,7,0Z" transform="translate(0 -1)" style="fill:#fff"/></svg> in NZ</p>
+            <p class="footer-base-email">support@checkin101.com</p>
+            <p class="twitter"><a href="http://twitter.com/checkin101"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16.27"><path d="M20,3.95a8,8,0,0,1-2,2.12v.51a11.9,11.9,0,0,1-3.2,8.07,10.78,10.78,0,0,1-8.5,3.62A11.32,11.32,0,0,1,0,16.41a9,9,0,0,0,1,.08,8,8,0,0,0,5.08-1.78,4.12,4.12,0,0,1-2.37-.83,3.88,3.88,0,0,1-1.44-2A5.1,5.1,0,0,0,3,12a4.76,4.76,0,0,0,1.1-.17,4.14,4.14,0,0,1-2.35-1.42,3.91,3.91,0,0,1-1-2.61v0a3.86,3.86,0,0,0,1.86.51A3.85,3.85,0,0,1,.85,4.8a4.08,4.08,0,0,1,.55-2A11.11,11.11,0,0,0,9.83,7a3.7,3.7,0,0,1-.08-.93A4.05,4.05,0,0,1,13.86,2a3.92,3.92,0,0,1,3,1.31,7.64,7.64,0,0,0,2.63-1,3.76,3.76,0,0,1-1.82,2.29A7,7,0,0,0,20,3.95Z" transform="translate(0 -2)" style="fill:#fff"/></svg></a></p>
+        </div>
     </div>
 <!--
     <div class="pure-g section center padding">
