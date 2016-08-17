@@ -34,7 +34,7 @@ a, img {
 a, button, input, select, textarea {
     outline: 0;
 }
-p.button a, p.button button, p.button input {
+p.button button {
     display: inline-block;
     padding: 21px 40px 19px;
     background: #00C6A3;
@@ -48,6 +48,12 @@ p.button a, p.button button, p.button input {
     cursor: pointer;
     -webkit-transition: background .3s;
     transition: background .3s;
+}
+p.button a {
+    color: #fff;
+}
+p.button button:hover {
+    background-color: #009E81;
 }
 p.button #code {
     background: #fff;
@@ -440,26 +446,15 @@ header .logo {
     font-weight: 600;
     padding-left: 15px;
 }
-
-.kiran img,
-.ben img,
-.lilia img {
-    float: left;
-    width: 60px;
-    border-radius: 30px;
-}
-
 .current-font img {
-    width: 80px;
-    border-radius: 50px;
+    width: 120px;
 }
 
-p.name {
-    margin-top: 8px;
-    padding-top: 4px;
+.testimonial-text p.name, p.name {
     font-size: 16px;
-    color: #fff;
-    font-weight: 100;
+    font-weight: 600;
+    opacity: 1;
+    padding-top: 40px;
 }
 
 .current-font p.name {
@@ -662,5 +657,8 @@ iframe {
     }
     header ul li#button {
         display: block;
+    }
+    #signup input {
+        float: none;
     }
 }
