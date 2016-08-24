@@ -52,12 +52,28 @@ p.button button {
 p.button a {
     color: #fff;
 }
+p.button a button {
+    background: none;
+    border: 1px solid #fff;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
 p.button button:hover {
     background-color: #009E81;
+}
+p.button a button:hover {
+    border-color: #00C6A3;
+    color: #fff;
+    background: #00C6A3;
 }
 p.button #code {
     background: #fff;
     color: #4A5E6F;
+}
+p.button #playme:before {
+    content: "\25B6";
+    font-family: sans-serif;
+    padding-right: 10px;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
     display: block;
@@ -276,7 +292,7 @@ header .logo {
 }
 #home .background .content .feature {
     width: 75%;
-    margin: 10% auto auto;
+    margin: 8% auto auto;
 }
 #home .background .content form {
     padding: 0 4% 4%;
@@ -495,17 +511,19 @@ span.company-current {
 .display-none {
     display: none;
 }
+/*
 .o-item {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.o-item:hover {
+*/
+.o-item {
     background: #eee;
     border-radius: 4px;
-    cursor: pointer;
+/*    cursor: pointer;*/
 }
-
+/*DEMO IFRAME IPHONE*/
 .iphone-container {
   box-shadow: 0 5px 15px 0 #999999;
   width: 260px;
@@ -560,7 +578,7 @@ span.company-current {
   background-color: #ffffff;
 }
 
-iframe {
+.iframe-container iframe {
     border: 0;
     -moz-transform: scale(0.668, 0.668);
     -webkit-transform: scale(0.668, 0.668);
@@ -573,6 +591,9 @@ iframe {
     -ms-transform-origin: top left;
     transform-origin: top left;
 }
+/*END DEMO IFRAME*/
+
+/*FOOTER*/
 #footer ul {
     padding: 0;
 }
@@ -623,6 +644,72 @@ iframe {
     border-radius: 50%;
     background: #fff;
 }
+/*END FOOTER*/
+
+/*LIGHTBOX VIDEO*/
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.lightbox-container {
+  position: relative;
+  max-width: 960px;
+  margin: 7% auto;
+  display: block;
+  padding: 0 3%;
+  height: auto;
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .lightbox-container {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .lightbox-container {
+    margin-top: 13%;
+  }
+}
+.lightbox-content {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+.lightbox-close {
+  text-transform: uppercase;
+  background: transparent;
+  position: absolute;
+  font-weight: 300;
+  font-size: 12px;
+  display: block;
+  border: none;
+  color: white;
+  top: -22px;
+  right: 3%;
+}
+.video-container {
+  padding-bottom: 56.25%;
+  position: relative;
+  padding-top: 30px;
+  overflow: hidden;
+  height: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/*END LIGHTBOX CSS*/
 @media screen and (max-width: 900px) {
 /*
     #home .background::after {
@@ -655,9 +742,11 @@ iframe {
     header ul li {
         display: none;
     }
+/*
     header ul li#button {
         display: block;
     }
+*/
     #signup input {
         float: none;
     }
