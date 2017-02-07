@@ -48,7 +48,7 @@ jQuery(function($) {
 
 console.log("hi");
         $.ajax({
-                url: "https://leads-capturer.futuresimple.com/form",
+                url: "https://hooks.zapier.com/hooks/catch/670032/6sp04a/",
                 data: data,
                 dataType: "json",
                 type: "post"
