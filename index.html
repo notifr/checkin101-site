@@ -52,7 +52,7 @@
             <li><a href="#overview">Overview</a></li>
 <!--            <li><a href="./about">About</a></li>-->
             <li><a href="https://dashboard.checkin101.com">Login</a></li>
-            <li id="button" style="margin-right:20px"><a id="demo" class="request-demo-btn" href="#animatedModal">Request a Demo</a></li>
+            <li id="button" style="margin-right:20px"><a class="request-demo-btn reqdemo" href="#animatedModal">Request a Demo</a></li>
           </ul>
         </nav>
       </div>
@@ -128,8 +128,8 @@
   <div class="pure-g section center padding dark fill-background" id="bg1">
     <h2 class="pure-u-1-1">Identify stakeholder sentiment, fast, and be able to take action on it.</h2>
     <div class="button pure-u-1-1">
-      <a href="#overview" style="text-decoration:none;padding:0px;">
-        <button id="demo" class="sign-up-btn" href="#animatedModal"> Request a Demo </button>
+      <a class="reqdemo" href="#animatedModal" style="text-decoration:none;padding:0px;">
+        <button  class="sign-up-btn" > Request a Demo </button>
       </a>
     </div>
   </div>
@@ -221,7 +221,7 @@
         <div class="pure-u-1">
           <p><strong>Want to learn more about Checkin101?</strong></p>
           <div class="pure-u-1-1 line" style="border-color:#e75c34;">
-            <p>Want to learn more about how Checkin101 works? Contact us here to set up a quick demo and have a chat to our in-house change managers. </p>
+            <p>Want to learn more about how Checkin101 works? <a class="reqdemo" href="#animatedModal" href="#animatedModal">Contact us here</a> to set up a quick demo and have a chat to our in-house change managers. </p>
           </div>
         </div>
       </div>
@@ -232,7 +232,7 @@
   <div class="pure-g section center padding dark fill-background" id="bg1">
       <h2 class="pure-u-1-1">Identify stakeholder sentiment, fast, and be able to take action on it.</h2>
       <div class="button pure-u-1-1">
-            <a href="#overview" style="text-decoration:none;padding:0px;">
+            <a class="reqdemo" href="#animatedModal" href="#overview" style="text-decoration:none;padding:0px;">
               <button class="sign-up-btn"> Request a Demo </button>
             </a>
           </div>
@@ -311,17 +311,17 @@
     </div>
         
         <div class="button pure-u-1-1">
-          <a id="demo" href="#animatedModal" style="text-decoration:none;padding:0px;">
+          <a id="reqdemo" href="#animatedModal" style="text-decoration:none;padding:0px;">
             <button id="demo" class="request-demo-btn" href="#animatedModal"> Request a Demo </button>
           </a>
         </div>
     </div>
   </div>
-  <script src="animatedModal.min.js"></script>
+  <script src="./animatedModal.min.js"></script>
 </body>
 <script>
    $(document).ready(function () {
-     $("#demo").animatedModal({
+     $(".reqdemo").animatedModal({
        animatedIn: 'fadeInUp',
        animatedOut: 'fadeOutDown',
        color: 'rgb(80, 190, 149)'
