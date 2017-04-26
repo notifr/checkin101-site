@@ -52,7 +52,7 @@ strong {
   font-weight: 600;
 }
 
-p.button button {
+.button button {
   display: inline-block;
   padding: 18px 30px;
   background: #00C6A3;
@@ -68,33 +68,33 @@ p.button button {
   transition: background .3s;
 }
 
-p.button a {
+.button a {
   color: #fff;
 }
 
-p.button a button {
+.button a button {
   background: none;
   border: 1px solid #fff;
   -webkit-transition: background .3s;
   transition: background .3s;
 }
 
-p.button button:hover {
+.button button:hover {
   background-color: #009E81;
 }
 
-p.button a button:hover {
+.button a button:hover {
   border-color: #00C6A3;
   color: #fff;
   background: #00C6A3;
 }
 
-p.button #code {
+.button #code {
   background: #fff;
   color: #4A5E6F;
 }
 
-p.button #playme:before {
+.button #playme:before {
   content: "\25B6";
   font-family: sans-serif;
   padding-right: 10px;
@@ -310,7 +310,7 @@ header .logo:hover {
   /*    padding-bottom: 40px;*/
 }
 
-#home .background::before {
+#home .background::before, .fill-background::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -322,7 +322,7 @@ header .logo:hover {
   background: rgba(74, 94, 111, 0.75);
 }
 
-#home .background::after {
+#home .background::after, .fill-background::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -361,6 +361,13 @@ header .logo:hover {
 
 #home #about-page.background::after {
   background-image: url('assets/image-5.jpg');
+}
+#bg1.fill-background::after {
+   background-image: url('assets/image-1.jpg');
+}
+.section.dark.fill-background {
+  position: relative;
+  background: none;
 }
 
 #home .background .content {
