@@ -200,6 +200,12 @@ body .section.blue {
   color: #fff;
 }
 
+body .modal {
+  text-align: center;
+  margin: 0;
+  color : #fff;
+}
+
 body .section.blue h1,
 body .section.dark h1 {
   color: #fff;
@@ -458,6 +464,15 @@ header .logo:hover {
 #signup fieldset button:hover {
   background-color: #009E81;
 }
+.button .request-demo-btn:hover{
+  background-color: #fff;
+  color:rgb(80, 190, 149);
+  transition: background 600ms;
+  border: none;
+}
+.sign-up-btn:hover{
+  background-color: #55acee;
+}
 
 #segments .segment {
   border: 1px solid #ddd;
@@ -466,6 +481,21 @@ header .logo:hover {
   padding: 40px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+#faq p {
+  font-size: 16px;
+}
+#faq .line {
+  border-left: 4px solid #9b59b6;
+  padding-left: 10px;
+  margin-bottom: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#faq .line p {
+  margin: 0;
 }
 
 #perform p {
@@ -882,6 +912,28 @@ span.company-current {
   top: 0;
 }
 
+/************************************
+ * Close button
+************************************/
+#closebt-container {
+	position: relative;
+	width:100%;
+	text-align:center;
+	margin-top:40px;
+}
+
+.closebt {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor:pointer;
+}
+
+.closebt:hover {
+	transform:rotate(90deg);
+}
 
 /*END LIGHTBOX CSS*/
 
